@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:propertyapp/CustomWidgets/ElevatedButton.dart';
 import 'package:propertyapp/CustomWidgets/TextWidget.dart';
-import '../Controllers/PropertySearchController.dart';
+import '../../Controllers/PropertySearchController.dart';
 import 'FavouriteScreen.dart';
 
 class PropertySearchScreen extends StatelessWidget {
@@ -14,7 +14,7 @@ class PropertySearchScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFF5F6FA),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        automaticallyImplyLeading: true,
+        automaticallyImplyLeading: false,
         title: const CustomTextWidget(
           title: 'Property Search',
           color: Colors.black, weight: FontWeight.bold,

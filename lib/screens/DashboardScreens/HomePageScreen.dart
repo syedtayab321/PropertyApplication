@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:propertyapp/Controllers/HomePageController.dart';
 import 'package:propertyapp/CustomWidgets/TextWidget.dart';
+import 'package:propertyapp/screens/PropertyDetailsRelated/PropertyDetailsScreen.dart';
 
 import 'FavouriteScreen.dart';
 
@@ -169,20 +170,35 @@ class HomeScreen extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  ListTile(
-                    leading: Image.asset('assets/icons/apartment.jpg', width: 50, height: 50),
-                    title: const CustomTextWidget(title: 'Orchard House', size: 16),
-                    subtitle: const CustomTextWidget(title: 'Rp. 2,500,000 / Year\n6 Bedroom • 4 Bathroom'),
+                  InkWell(
+                    onTap: (){
+                      Get.to(PropertyDetailScreen());
+                    },
+                    child: ListTile(
+                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      title: const CustomTextWidget(title: 'Orchard House', size: 16,weight: FontWeight.bold),
+                      subtitle: const CustomTextWidget(title: 'Rp. 2,500,000 / Year\n6 Bedroom • 4 Bathroom'),
+                    ),
                   ),
-                  ListTile(
-                    leading: Image.asset('assets/icons/apartment.jpg', width: 50, height: 50),
-                    title: const CustomTextWidget(title: 'The Hollies House', size: 16),
-                    subtitle: const CustomTextWidget(title: 'Rp. 2,000,000 / Year\n5 Bedroom • 3 Bathroom'),
+                  InkWell(
+                    onTap: (){
+                      Get.to(PropertyDetailScreen());
+                    },
+                    child: ListTile(
+                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      title: const CustomTextWidget(title: 'The Hollies House', size: 16,weight: FontWeight.bold),
+                      subtitle: const CustomTextWidget(title: 'Rp. 2,000,000 / Year\n5 Bedroom • 3 Bathroom'),
+                    ),
                   ),
-                  ListTile(
-                    leading: Image.asset('assets/icons/apartment.jpg', width: 50, height: 50),
-                    title: const CustomTextWidget(title: 'Green Villa', size: 16),
-                    subtitle: const CustomTextWidget(title: 'Rp. 3,000,000 / Year\n7 Bedroom • 5 Bathroom'),
+                  InkWell(
+                    onTap: (){
+                      Get.to(PropertyDetailScreen());
+                    },
+                    child: ListTile(
+                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      title: const CustomTextWidget(title: 'Green Villa', size: 16,weight: FontWeight.bold,),
+                      subtitle: const CustomTextWidget(title: 'Rp. 3,000,000 / Year\n7 Bedroom • 5 Bathroom'),
+                    ),
                   ),
                 ],
               ),
@@ -210,37 +226,42 @@ class PropertyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      margin: const EdgeInsets.only(right: 16),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
-      ),
-      child: Stack(
-        children: [
-          Positioned(
-            top: 8,
-            left: 8,
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-              child: CustomTextWidget(title: distance, color: Colors.black),
+    return InkWell(
+      onTap: (){
+        Get.to(PropertyDetailScreen());
+      },
+      child: Container(
+        width: 200,
+        margin: const EdgeInsets.only(right: 16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+        ),
+        child: Stack(
+          children: [
+            Positioned(
+              top: 8,
+              left: 8,
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                child: CustomTextWidget(title: distance, color: Colors.black),
+              ),
             ),
-          ),
-          Positioned(
-            bottom: 16,
-            left: 8,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CustomTextWidget(title: title, color: Colors.white, size: 16, weight: FontWeight.bold),
-                const SizedBox(height: 4),
-                CustomTextWidget(title: location, color: Colors.white),
-              ],
+            Positioned(
+              bottom: 16,
+              left: 8,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomTextWidget(title: title, color: Colors.white, size: 16, weight: FontWeight.bold),
+                  const SizedBox(height: 4),
+                  CustomTextWidget(title: location, color: Colors.white),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
