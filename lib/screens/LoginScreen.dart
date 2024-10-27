@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:propertyapp/Controllers/PasswordController.dart';
 import 'package:propertyapp/CustomWidgets/ElevatedButton.dart';
 import 'package:propertyapp/CustomWidgets/TextWidget.dart';
+import 'package:propertyapp/screens/HomePageScreen.dart';
 import 'package:propertyapp/screens/PropertySearchScreen.dart';
 import 'package:propertyapp/screens/RegistrationScreen.dart';
 
@@ -103,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                       width: double.infinity,
                       child: CustomElevatedButton(
                         path: () {
-                          Get.to(PropertySearchScreen());
+                          Get.to(HomeScreen());
                         },
                         color: Colors.white,
                         backcolor: Colors.blueAccent,

@@ -28,42 +28,6 @@ class PropertySearchScreen extends StatelessWidget {
         ],
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            const UserAccountsDrawerHeader(
-              accountName: CustomTextWidget(title: "syed Tayab"),
-              accountEmail: CustomTextWidget(title: "syedTayab@example.com"),
-              currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: CustomTextWidget(
-                  title:"T",
-                  size: 24.0, color: Colors.blue,
-                ),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.blueAccent,
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.favorite, color: Colors.redAccent),
-              title: const CustomTextWidget(title: 'Favorites'),
-              onTap: () {
-                Get.to(FavoritePropertiesScreen());
-              },
-            ),
-            // List tile for logout
-            ListTile(
-              leading: const Icon(Icons.logout, color: Colors.black),
-              title: const CustomTextWidget(title: 'Logout'),
-              onTap: () {
-                Get.snackbar("Logout", "You have been logged out");
-              },
-            ),
-          ],
-        ),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
