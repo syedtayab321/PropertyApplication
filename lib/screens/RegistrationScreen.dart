@@ -5,6 +5,8 @@ import 'package:propertyapp/CustomWidgets/TextWidget.dart';
 import 'LoginScreen.dart';
 
 class RegistrationScreen extends StatefulWidget {
+  const RegistrationScreen({super.key});
+
   @override
   State<RegistrationScreen> createState() => _RegistrationScreenState();
 }
@@ -25,7 +27,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/icons/apartment.jpg'),
+                image: AssetImage('assets/images/apartment.jpg'),
                 fit: BoxFit.cover,
               ),
             ),

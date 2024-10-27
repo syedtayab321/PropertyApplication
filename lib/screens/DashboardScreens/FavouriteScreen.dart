@@ -4,10 +4,10 @@ import 'package:propertyapp/CustomWidgets/TextWidget.dart';
 class FavoritePropertiesScreen extends StatelessWidget {
   final List<Map<String, dynamic>> favoriteProperties = [
     {
-      'title': 'assets/icons/apartment.jpg',
+      'title': 'Apartments',
       'location': 'Miami, FL',
-      'price': '\$1,000,000',
-      'image': 'assets/icons/apartment.jpg',
+      'price': '1,000,000',
+      'image': 'assets/images/apartment.jpg',
       'bedrooms': 4,
       'bathrooms': 3,
       'area': '3,000 sqft',
@@ -15,8 +15,8 @@ class FavoritePropertiesScreen extends StatelessWidget {
     {
       'title': 'Modern Apartment',
       'location': 'Chicago, IL',
-      'price': '\$600,000',
-      'image': 'assets/icons/apartment.jpg',
+      'price': '600,000',
+      'image': 'assets/images/apartment.jpg',
       'bedrooms': 3,
       'bathrooms': 2,
       'area': '1,500 sqft',
@@ -24,8 +24,8 @@ class FavoritePropertiesScreen extends StatelessWidget {
     {
       'title': 'Cozy Cottage',
       'location': 'Austin, TX',
-      'price': '\$400,000',
-      'image': 'assets/icons/apartment.jpg',
+      'price': '400,000',
+      'image': 'assets/images/apartment.jpg',
       'bedrooms': 2,
       'bathrooms': 1,
       'area': '1,000 sqft',

@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:propertyapp/Controllers/HomePageController.dart';
 import 'package:propertyapp/CustomWidgets/TextWidget.dart';
 import 'package:propertyapp/screens/PropertyDetailsRelated/PropertyDetailsScreen.dart';
-
 import 'FavouriteScreen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -144,21 +143,21 @@ class HomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: const [
                   PropertyCard(
-                    image: 'assets/icons/apartment.jpg',
+                    image: 'assets/images/apartment.jpg',
                     title: 'Dreams-ville House',
-                    location: 'Jl Sultan Iskandar Muda',
+                    location: 'Jl Sultan Iskandar Mud',
                     distance: '1.8 km',
                   ),
                   PropertyCard(
-                    image: 'assets/icons/apartment.jpg',
+                    image: 'assets/images/apartment.jpg',
                     title: 'Ascot House',
-                    location: 'Jl Cilantro Terusan',
+                    location: 'Jl Cilantro Uterus',
                     distance: '2.0 km',
                   ),
                   PropertyCard(
-                    image: 'assets/icons/apartment.jpg',
+                    image: 'assets/images/apartment.jpg',
                     title: 'Sunny Apartments',
-                    location: 'Jl Rawa Bunga',
+                    location: 'Jl Raw Bung',
                     distance: '3.1 km',
                   ),
                 ],
@@ -175,7 +174,7 @@ class HomeScreen extends StatelessWidget {
                       Get.to(PropertyDetailScreen());
                     },
                     child: ListTile(
-                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      leading: Image.asset('assets/images/apartment.jpg', width: 100, height: 100),
                       title: const CustomTextWidget(title: 'Orchard House', size: 16,weight: FontWeight.bold),
                       subtitle: const CustomTextWidget(title: 'Rp. 2,500,000 / Year\n6 Bedroom • 4 Bathroom'),
                     ),
@@ -185,7 +184,7 @@ class HomeScreen extends StatelessWidget {
                       Get.to(PropertyDetailScreen());
                     },
                     child: ListTile(
-                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      leading: Image.asset('assets/images/apartment.jpg', width: 100, height: 100),
                       title: const CustomTextWidget(title: 'The Hollies House', size: 16,weight: FontWeight.bold),
                       subtitle: const CustomTextWidget(title: 'Rp. 2,000,000 / Year\n5 Bedroom • 3 Bathroom'),
                     ),
@@ -195,7 +194,7 @@ class HomeScreen extends StatelessWidget {
                       Get.to(PropertyDetailScreen());
                     },
                     child: ListTile(
-                      leading: Image.asset('assets/icons/apartment.jpg', width: 100, height: 100),
+                      leading: Image.asset('assets/images/apartment.jpg', width: 100, height: 100),
                       title: const CustomTextWidget(title: 'Green Villa', size: 16,weight: FontWeight.bold,),
                       subtitle: const CustomTextWidget(title: 'Rp. 3,000,000 / Year\n7 Bedroom • 5 Bathroom'),
                     ),

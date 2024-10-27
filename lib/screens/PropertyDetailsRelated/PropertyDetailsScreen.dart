@@ -18,7 +18,7 @@ class PropertyDetailScreen extends StatelessWidget {
             Stack(
               children: [
                 Image.asset(
-                  'assets/icons/apartment.jpg',
+                  'assets/images/apartment.jpg',
                   width: double.infinity,
                   height: 300,
                   fit: BoxFit.cover,
@@ -54,7 +54,7 @@ class PropertyDetailScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 5),
                       CustomTextWidget(
-                        title: 'Jl. Sultan Iskandar Muda, Jakarta Selatan',
+                        title: 'Jl. Sultan Iskandar Mud, Jakarta Selatan',
                         color: Colors.white, size: 16,
                       ),
                       SizedBox(height: 10),
@@ -111,7 +111,7 @@ class PropertyDetailScreen extends StatelessWidget {
                     children: [
                       const CircleAvatar(
                         radius: 30,
-                        backgroundImage: NetworkImage('assets/icons/apartment.jpg'),
+                        backgroundImage: NetworkImage('assets/images/apartment.jpg'),
                       ),
                       const SizedBox(width: 10),
                       const Column(
@@ -155,7 +155,7 @@ class PropertyDetailScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: const DecorationImage(
-                              image: AssetImage('assets/icons/apartment.jpg'),
+                              image: AssetImage('assets/images/apartment.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
